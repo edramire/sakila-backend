@@ -1,12 +1,51 @@
+# Entregado en clases #
+
+/build/
+/bin/
+
+# java #
+
 *.class
 
-# Mobile Tools for Java (J2ME)
-.mtj.tmp/
-
 # Package Files #
-*.jar
-*.war
+#*.jar # no se si incluiremos algún .jar ...
+#*.war
 *.ear
 
-# virtual machine crash logs, see http://www.java.com/en/download/help/error_hotspot.xml
-hs_err_pid*
+# gradle #
+# https://github.com/github/gitignore/blob/master/Gradle.gitignore
+
+.gradle
+
+# Ignore Gradle GUI config
+gradle-app.setting
+
+# Avoid ignoring Gradle wrapper jar file (.jar files are usually ignored)
+!gradle-wrapper.jar
+
+# Cache of project
+.gradletasknamecache
+
+# Eclipse (algunos)#
+# https://github.com/github/gitignore/blob/master/Global/Eclipse.gitignore
+
+.settings/
+tmp/
+*.tmp
+*.bak
+*.swp
+*~.nib
+local.properties
+
+# Eclipse Core
+.project
+
+# Locally stored "Eclipse launch configurations"
+*.launch
+
+# JDT-specific (Eclipse Java Development Tools)
+.classpath
+
+# PDT-specific
+.buildpath
+
