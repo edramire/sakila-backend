@@ -14,6 +14,7 @@ import javax.ws.rs.Produces;
 
 import facade.FilmActorFacade;
 import model.FilmActor;
+import model.FilmActorKey;
 
 @Path("/filmActors")
 public class FilmActorService {
@@ -30,10 +31,11 @@ public class FilmActorService {
 	}
 	
 	@GET
-    @Path("{id}")
+    @Path("{idFilm}/{idActor}")
     @Produces({"application/xml", "application/json"})
-    public FilmActor find(@PathParam("id") Integer id) {
-        return filmActorFacadeEJB.find(id);
+    public FilmActor find(@PathParam("idFilm") Integer idFilm, @PathParam("idActor") Integer idActor) {
+		FilmActorKey key = new FilmActorKey(idFilm,idActor);
+		return filmActorFacadeEJB.find(key);
     }
 	
 	@POST

@@ -11,6 +11,7 @@ import java.sql.Timestamp;
  */
 @Entity
 @Table(name="film_actor")
+@IdClass(FilmActorKey.class)
 @NamedQuery(name="FilmActor.findAll", query="SELECT fa FROM FilmActor fa")
 public class FilmActor implements Serializable {
 	private static final long serialVersionUID = 3L;
