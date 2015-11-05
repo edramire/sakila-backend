@@ -14,7 +14,7 @@ public class FilmActorKey implements Serializable {
 	private int actorId;
 	private int filmId;
 	
-	public FilmActorKey(int actorId, int filmId) {
+	public FilmActorKey(int filmId, int actorId) {
 		this.filmId = filmId;
 		this.actorId = actorId;
 	}
