@@ -1,0 +1,19 @@
+<resources>
+    <string name="app_name">Taller-Android-BD</string>
+    <string name="start">Iniciar</string>
+    <string name="add">Añadir</string>
+    <string name="new_item">Nuevo Item</string>
+    <string name="item_detail">Detalles</string>
+    <string name="exit">Salir</string>
+    <string name="test">Test</string>
+    <string name="void_string"></string>
+    <string name="name_field">Nombre</string>
+    <string name="last_name_field">Apellido</string>
+    <string name="last_update_field">Ultima Actualización</string>
+    <string name="id_field">ID</string>
+    <string name="server">http://192.168.1.35:8080/sakila-backend/actors</string>
+    <string name="error_database_connection">Error: no se pudo conectar a la base de datos.</string>
+    <string name="error_internet">Error: no hay internet.</string>
+    <string name="new_actor">Crear actor</string>
+    <string name="actor_created">El actor se ha creado satisfactoriamente.</string>
+</resources>
